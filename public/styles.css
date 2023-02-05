@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Lilita One', sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: linear-gradient(45deg, #F17C58, #E94584, #24AADB);
+  background-size: 600% 100%;
+  animation: gradient 16s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%
+  }
+
+  100% {
+    background-position: 100%
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 50px !important;
+  font-weight: 500 !important;
+  line-height: 50px;
+  animation: white-change 5s infinite;
+}
+
+::selection {
+  color: #E94584;
+  background: white;
+}
+
+::placeholder {
+  color: gray !important;
+  opacity: 1;
+}
+
+input[type="text"] {
+  background-color: white;
+  color: #454545;
+}
+
+.glass {
+  color: white !important;
+}
+
+.input {
+  width: 103%;
+}

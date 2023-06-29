@@ -9,10 +9,10 @@ const handler = async function (event, context) {
       }),
     }
   }
-  const { msg } = context.clientContext
+  const { msg } = context.clientContext;
   try {
-    const response = await fetch('https://api.telegram.org/bot5583030810:AAG7ethPHzaLxuo7GnC2P6I15S4WOqprtso/sendMessage', {
-      chat_id: 5278367192,
+    const response = await fetch(`https://api.telegram.org/bot${process.env.TOKEN}/sendMessage`, {
+      chat_id: process.env.CHATID,
       text: msg
     })
     if (!response.ok) {
